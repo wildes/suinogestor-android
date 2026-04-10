@@ -1,0 +1,27 @@
+A **eficiência reprodutiva** de uma granja é medida pela sua capacidade de produzir o maior número possível de leitões desmamados por fêmea ao ano, podendo teoricamente ultrapassar a marca de 32 leitões anuais em rebanhos de alto nível tecnológico. Para que a suinocultura alcance essas metas de excelência, o Manejo Reprodutivo deve atuar como a engrenagem principal da produção, envolvendo cuidados rigorosos desde o preparo das leitoas até as rotinas diárias de cobertura, desmame e controle de machos. 
+
+Abaixo, detalho como as fontes da SOS Suínos estruturam os principais pilares desse manejo:
+
+**1. Preparação e Reposição de Marrãs (Leitoas)**
+O sucesso reprodutivo da granja começa muito antes da primeira cobertura. As fêmeas de reposição de alto valor genético precisam passar por um **período de quarentena e aclimatação**, onde são expostas aos patógenos presentes na granja para desenvolverem imunidade própria. 
+*   **Estimulação da puberdade:** O ideal é promover o contato (focinho a focinho) das leitoas com machos rufiões a partir dos 145 a 155 dias de idade.
+*   **A Primeira Cobertura:** Para garantir uma vida reprodutiva longa e produtiva, a fêmea só deve ser coberta quando atingir a plena maturidade física e sexual. A recomendação é inseminá-las com **idade superior a 210-240 dias, peso acima de 140 kg, espessura de toucinho entre 12 e 18 mm, e no mínimo a partir do seu segundo ou terceiro cio**. 
+*   **Flushing Nutricional:** Nos 10 a 14 dias que antecedem a cobertura, recomenda-se fornecer ração à vontade (ou cerca de 3 kg/dia de ração lactação). Esse aumento energético — que estudos demonstram ser muito eficaz quando composto por carboidratos (amido), pois eleva os picos de insulina — aumenta significativamente a taxa ovulatória, o número de embriões viáveis e o peso das placentas.
+
+**2. O Momento da Cobertura e a Detecção de Cio**
+O momento do acasalamento exige extrema observação e estímulo adequado.
+*   **Múltiplas Montas:** Recomenda-se realizar de duas a três coberturas por cio (por exemplo: manhã, tarde e manhã seguinte). **Sempre que possível, deve-se utilizar um reprodutor diferente a cada monta**. Isso não apenas racionaliza o uso dos machos, mas o sêmen heterogêneo estimula melhor a fêmea e resulta num maior número de leitões nascidos vivos.
+*   **Cortejo e Conforto:** O tempo de "namoro" ou cortejo pré-copulatório não deve ser negligenciado. Quanto maior e melhor for esse contato prévio, maiores serão as contrações uterinas da matriz, o que facilita o transporte do esperma pelos ovidutos e aumenta a taxa de fertilidade e o tamanho da leitegada. 
+*   **Intervalo Desmama-Cobertura (IDE):** O cenário ideal é que a fêmea entre no cio e seja coberta entre **3 a 5 dias após o desmame**. Fêmeas com um IDE longo (retorno entre 6 a 15 dias) são frequentemente consideradas subférteis e produzem ninhadas menores. 
+
+**3. Manejo dos Reprodutores (Cachaços)**
+Os machos respondem por 50% de todo o potencial genético dos animais de abate. Para extrair o máximo de sua vida útil (que pode chegar a até 4 anos), o manejo deve focar em eficiência e saúde.
+*   **Controle de Peso:** Os reprodutores **devem ser mantidos "enxutos" (relativamente magros)**, recebendo alimentação restrita e controlada (cerca de 1% de seu peso vivo em ração gestação). Machos gordos perdem a libido, desenvolvem problemas de casco e aprumos e não realizam boas montas.
+*   **Taxa de Utilização:** O uso sexual deve iniciar de forma moderada aos 200-210 dias de idade. Deve-se evitar rigorosamente tanto o **super-uso** (que exaure o animal e reduz a concentração de espermatozoides viáveis) quanto o **sub-uso** (mais de 15 dias sem montar, o que causa baixa motilidade do sêmen).
+*   **Higiene:** As baias dos reprodutores precisam ser extremamente limpas e secas, com uso de cal hidratada, para evitar que abriguem bactérias como *E. coli* e *Corynebacterium suis*. Na hora da cobertura, esses patógenos podem ser transferidos para o trato reprodutivo da fêmea, causando cistites, pielonefrites, descargas vulvares e falhas na concepção.
+
+**4. Impactos da Lactação, Desmame e Descarte**
+As decisões tomadas no puerpério afetam diretamente o próximo ciclo reprodutivo da matriz.
+*   **Idade de Desmame:** Na suinocultura moderna o desmame precoce ocorre frequentemente ao redor de 21 dias. **Desmamar fêmeas com menos de 20 dias (ex: 14 a 17 dias) é altamente comprometedor**, pois a superfície uterina não teve tempo fisiológico para se recuperar e involuir, o que causa altas taxas de repetição de cio (chegando a mais de 25%) e falhas na nova implantação dos embriões.
+*   **Perda de Peso Corporal:** A fêmea não deve perder mais que 13% a 15% de seu peso do dia do parto até a desmama. Uma grande perda corporal inibe a secreção hormonal ideal, resultando em anestro (ausência de cio) ou num intervalo desmama-cio muito longo.
+*   **Critérios de Descarte:** O rebanho deve ter sua faixa etária controlada, mantendo o pico de produtividade das fêmeas, que ocorre do 2º ao 6º parto. Uma fêmea não deve ser descartada apenas por idade, mas através de uma "seleção natural" com base em **problemas reprodutivos** (abortos, anestro prolongado, descargas purulentas, repetir cio 3 vezes), **problemas de casco/aprumos**, ou **baixa produção leiteira**.

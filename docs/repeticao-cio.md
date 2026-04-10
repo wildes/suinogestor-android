@@ -1,0 +1,17 @@
+Na suinocultura brasileira, uma **taxa de repetição de cio entre 8% e 9% é considerada normal**, mas índices que ultrapassam a marca dos 25% evidenciam falhas graves que comprometem o manejo reprodutivo. O impacto econômico dessas falhas é direto e severo, pois um dia a mais para o retorno ao cio custa cerca de US$ 3,00, e um cio perdido (quando a fêmea permanece vazia por 21 dias) gera um prejuízo aproximado de US$ 63,00 por matriz.
+
+As repetições de cio podem ser divididas e diagnosticadas com base no intervalo de dias em que ocorrem:
+
+**Repetições em Intervalos Regulares (17 a 24 dias):**
+Esses retornos estão fortemente associados a fatores de estresse, nutrição e erros na rotina da granja. As principais causas incluem brigas causadas pelo reagrupamento de matrizes, temperaturas ambientais acima de 22 a 25°C, coberturas de leitoas muito novas (antes dos 180 dias de idade) e o fornecimento de ração com excesso de energia nos primeiros 20 dias pós-cobertura. O manejo inadequado dos reprodutores também é determinante, pois tanto o superuso quanto o subuso dos machos, ou a sua infertilidade temporária por estresse calórico, reduzem a viabilidade do sêmen. 
+Um dos maiores vilões do retorno regular, contudo, é o **desmame muito precoce**. Desmamar fêmeas com menos de 21 dias (ex: média de 14,9 dias) pode elevar a taxa de repetição de cio para quase 25%, pois não há tempo biológico para que ocorra a involução natural do útero e sua preparação para uma nova concepção. Em contrapartida, lotes desmamados com quase 22 dias apresentam taxas normais de retorno, na casa dos 2%.
+
+**Repetições em Intervalos Irregulares (25 a 60 dias):**
+Retornos irregulares geralmente apontam para falhas sanitárias, presença de infecções ou intoxicações. A falta de higiene nas instalações ou durante a monta predispõe as matrizes a infecções geniturinárias (como cistites e descargas vulvares), que causam a perda da gestação. Doenças específicas também são grandes causadoras:
+*   **Brucelose:** Provoca o retorno ao cio entre 35 e 60 dias.
+*   **Leptospirose:** Causa retornos entre 30 e 38 dias após a cobertura, frequentemente acompanhados de abortos no final da gestação ou leitegadas muito pequenas.
+*   **Parvovirose:** O vírus provoca pseudociez (falsa gestação), retornos irregulares e a presença de fetos mumificados.
+Na parte nutricional, a presença da micotoxina **Zearalenona** na ração atua no sistema reprodutivo das fêmeas mimetizando o estro e mantendo o corpo lúteo, o que induz uma falsa gestação, reduz drasticamente as taxas de concepção e culmina na repetição de cio.
+
+**Estratégias de Controle e Descarte:**
+Para solucionar essas falhas, o primeiro passo é manter um histórico reprodutivo extenso e rigoroso da granja, controlando dados como a idade do plantel, ocorrência de doenças, qualidade das coberturas e a porcentagem exata de repetições. Como regra de ouro para a seleção do rebanho, **leitoas ou matrizes que repetem o cio após três coberturas com reprodutores diferentes** devem ser consideradas inférteis e sumariamente descartadas do plantel. O descarte também é a medida gerencial mais indicada para fêmeas que repetem cio em decorrência de problemas geniturinários crônicos, uma vez que tratamentos com antibióticos e lavagens uterinas raramente são eficientes e não compensam o risco de manter o animal.

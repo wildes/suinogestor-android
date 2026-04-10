@@ -1,0 +1,21 @@
+A performance do 2º parto é um momento crítico e revelador na suinocultura. Muitas granjas tecnificadas enfrentam o problema da **redução do número de leitões nascidos vivos de fêmeas de segunda parição**, o que pode trazer consequências econômicas sérias, especialmente quando esse quadro vem associado a uma baixa taxa de fertilidade dessas mesmas fêmeas.
+
+Dentro do contexto da Gestão de Produção e do Manejo Reprodutivo, a literatura aponta que a queda de desempenho no 2º parto não é uma regra biológica obrigatória, mas sim um reflexo do manejo aplicado à fêmea desde a sua preparação como leitoa até o final da sua primeira lactação. 
+
+Abaixo, detalho as principais causas dessa queda e as estratégias de manejo recomendadas para garantir o sucesso do segundo ciclo reprodutivo:
+
+**1. O Impacto da Idade e Peso na Primeira Cobertura**
+O sucesso do segundo parto é construído antes mesmo da primeira gestação. Uma marrã (leitoa) que é coberta com o peso e a idade adequados chegará ao primeiro parto com um bom escore corporal, o que garante uma boa lactação, um bom retorno à ciclicidade e um excelente desempenho no segundo parto. 
+Por outro lado, **a precocidade na primeira cobertura é severamente punida no segundo parto**. Pesquisas demonstram que fêmeas cobertas muito cedo (com menos de 190 dias de idade) chegam a ter 2,3 leitões a menos na segunda parição, em comparação com aquelas que foram cobertas com a maturidade ideal (entre 210 e 220 dias). Outro estudo reforça essa métrica, mostrando que fêmeas cobertas com menos de 185 dias pariram em média 8,56 leitões no segundo parto, enquanto aquelas cobertas com mais de 207 dias alcançaram uma média de 9,95 leitões.
+
+**2. O Desgaste da Primeira Lactação e o Desmame**
+As fêmeas de primeiro parto (primíparas) ainda estão em fase de crescimento corporal enquanto precisam produzir leite para a sua primeira ninhada. Se elas sofrem um desgaste excessivo nesse período, perdendo muita gordura dorsal e peso, isso afetará diretamente o intervalo desmama-cio e reduzirá o tamanho da leitegada subsequente. 
+Além disso, o manejo do desmame é crucial. Fêmeas submetidas ao desmame muito precoce apresentam um desenvolvimento folicular limitado e uma recuperação incompleta do trato reprodutivo, fatores que são apontados como a **principal causa da diminuição da sobrevivência embrionária no segundo parto**. 
+
+**3. Estratégias Práticas para Melhorar o 2º Parto**
+Para contornar esses desafios fisiológicos e aumentar o número de nascidos vivos, os especialistas recomendam algumas mudanças fundamentais no modelo de manejo:
+*   **Trate-a como leitoa por mais tempo:** A regra de ouro é manejar a fêmea como leitoa até que ela chegue, pelo menos, ao início da segunda gestação, evitando tratá-la como uma matriz adulta e rústica logo após a primeira cobertura.
+*   **Pular o primeiro cio (Atraso na Cobertura):** Uma das técnicas mais eficazes para melhorar a segunda leitegada é "segurar" as primíparas após o desmame. Matrizes que descansam por pelo menos 11 a 12 dias antes da nova cobertura (pulando o primeiro cio pós-desmame) apresentam um **aumento de 2,2 a 3,4 leitões nascidos vivos no 2º parto**, quando comparadas àquelas cobertas imediatamente no aparecimento do primeiro cio.
+*   **Intervenção Hormonal:** A adição do hormônio altrenogest na ração também tem sido relacionada com o aumento do número de nascidos vivos na segunda parição, por ajudar a organizar o ciclo reprodutivo e o preparo uterino.
+
+Em um contexto mais amplo, é importante lembrar que marrãs e matrizes de primeiro e segundo parto são naturalmente menos produtivas do que as matrizes mais velhas. O grande objetivo de aplicar um manejo reprodutivo minucioso para proteger a performance do 2º parto é garantir que essa fêmea jovem não sofra descarte precoce e consiga atingir o **pico de máxima performance reprodutiva da sua vida útil, que ocorre entre o 3º e o 6º parto**. O planejamento ideal de uma granja estável exige que cerca de 62% a 65% do plantel esteja concentrado justamente entre a segunda e a quinta parição.
