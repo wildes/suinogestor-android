@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "material-3-expressive": {
+      "source": "albermonte/android-skills",
+      "sourceType": "github",
+      "computedHash": "125ef6d71eedeb58ab4481bd75be1c038433e3d7ea2a3a25b2f67644d135d2fc"
+    },
+    "mobile-android-design": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "0dfa08663016e0faa2db0611420bd5c17ba2d635a057e17a6b71c2a0c3f2ed79"
+    }
+  }
+}

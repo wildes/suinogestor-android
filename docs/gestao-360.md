@@ -1,4 +1,4 @@
-Com base na vasta bagagem técnica dos boletins da SOS Suínos e em nossa conversa sobre a necessidade de profissionalizar a atividade, um aplicativo de gestão suinícola precisaria transformar o produtor de um simples "criador" em um empresário estratégico. O aplicativo poderia se chamar **"SuínoGestão 360"** e seria dividido em módulos focados em transformar dados biológicos e zootécnicos em decisões financeiras. 
+Com base na vasta bagagem técnica dos boletins da SOS Suínos e em nossa conversa sobre a necessidade de profissionalizar a atividade, um aplicativo de gestão suinícola precisaria transformar o produtor de um simples "criador" em um empresário estratégico. O aplicativo poderia se chamar **"SuinoGestor"** e seria dividido em módulos focados em transformar dados biológicos e zootécnicos em decisões financeiras. 
 
 Aqui está o que o produtor encontraria na palma da mão:
 

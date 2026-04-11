@@ -14,3 +14,67 @@ O sucesso e o retorno econômico da atividade dependem de quão bem o produtor c
 3.  **Otimização das Instalações:** O fluxo de produção é matemático; as fichas de lote ajudam a comprovar se o tempo de permanência ("período de ocupação") planejado para cada galpão está sendo cumprido, evitando o estrangulamento das instalações e garantindo que o tempo de vazio sanitário seja respeitado.
 
 Em resumo, enquanto a *Ficha da Matriz* avalia o desempenho individual na área de reprodução, a **Ficha de Lote** é a principal ferramenta de gestão para as fases de crescimento (creche, recria e terminação). Ela transforma a biologia do rebanho em números exatos, possibilitando uma gestão profissional e lucrativa da produção de carne.
+
+
+## Ficha de Lote
+
+### Cabeçalho
+
+| Nº Lote | | Nasc.: | | VV: | |
+|---|---|---|---|---|---|
+| **Mãe:** | | **Pai:** | | **NM:** | |
+| **Previsão de Venda:** | | | | **MM:** | |
+| | | | | **TT:** | |
+
+---
+
+### Tabela de Fases
+
+| Fases | Prevista | Real | Idade | Qd. | Peso | Sala | Baia |
+|---|---|---|---|---|---|---|---|
+| Pré-Inicial | | | | | | | |
+| Desmama | | | | | | | |
+| Inicial 1 | | | | | | | |
+| Inicial 2 | | | | | | | |
+| Recria | | | | | | | |
+| Terminação | | | | | | | |
+
+---
+
+### Rodapé
+
+| Data da Venda | | Peso | Kg | Idade |
+|---|---|---|---|---|
+| | | | | |
+
+---
+
+### Descrição dos Campos
+
+**Cabeçalho — Identificação do Lote:**
+- **Nº Lote** — número de identificação do lote
+- **Nasc.** — data de nascimento dos animais do lote
+- **Mãe** — identificação da matriz de origem
+- **Pai** — identificação do reprodutor
+- **Previsão de Venda** — data estimada para abate/comercialização
+
+**Resumo de Nascimentos (canto superior direito):**
+- **VV** — nascidos vivos
+- **NM** — natimortos
+- **MM** — mumificados
+- **TT** — total geral de nascidos
+
+**Tabela de Fases de Criação:**
+- **Fases** — etapa da criação (Pré-Inicial, Desmama, Inicial 1, Inicial 2, Recria, Terminação)
+- **Prevista** — data prevista para entrada na fase
+- **Real** — data real de entrada na fase
+- **Idade** — idade dos animais na fase
+- **Qd.** — quantidade de animais na fase
+- **Peso** — peso médio ou total na fase
+- **Sala** — sala onde o lote está alojado
+- **Baia** — baia específica dentro da sala
+
+**Rodapé — Saída/Venda:**
+- **Data da Venda** — data efetiva de comercialização
+- **Peso (Kg)** — peso dos animais na venda
+- **Idade** — idade dos animais no momento da venda
