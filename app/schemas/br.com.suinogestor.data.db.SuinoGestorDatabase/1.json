@@ -1,0 +1,210 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "e4704a9343c2e681bacfa822a4fd845c",
+    "entities": [
+      {
+        "tableName": "femeas",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `identificacao` TEXT NOT NULL, `dataNascimento` TEXT NOT NULL, `racaLinhagem` TEXT NOT NULL, `categoria` TEXT NOT NULL, `pesoEntradaKg` REAL, `eccAtual` INTEGER, `origem` TEXT, `fotoUri` TEXT, `status` TEXT NOT NULL, `paridade` INTEGER NOT NULL, `dataEntrada` TEXT NOT NULL, `ativo` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "identificacao",
+            "columnName": "identificacao",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataNascimento",
+            "columnName": "dataNascimento",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "racaLinhagem",
+            "columnName": "racaLinhagem",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "categoria",
+            "columnName": "categoria",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pesoEntradaKg",
+            "columnName": "pesoEntradaKg",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "eccAtual",
+            "columnName": "eccAtual",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "origem",
+            "columnName": "origem",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "fotoUri",
+            "columnName": "fotoUri",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paridade",
+            "columnName": "paridade",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataEntrada",
+            "columnName": "dataEntrada",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ativo",
+            "columnName": "ativo",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_femeas_identificacao",
+            "unique": true,
+            "columnNames": [
+              "identificacao"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_femeas_identificacao` ON `${TABLE_NAME}` (`identificacao`)"
+          }
+        ]
+      },
+      {
+        "tableName": "alertas",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `femeaId` INTEGER, `tipo` TEXT NOT NULL, `mensagem` TEXT NOT NULL, `prioridade` TEXT NOT NULL, `dataGeracao` TEXT NOT NULL, `dataLeitura` TEXT, `lido` INTEGER NOT NULL, FOREIGN KEY(`femeaId`) REFERENCES `femeas`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "femeaId",
+            "columnName": "femeaId",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mensagem",
+            "columnName": "mensagem",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "prioridade",
+            "columnName": "prioridade",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataGeracao",
+            "columnName": "dataGeracao",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dataLeitura",
+            "columnName": "dataLeitura",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lido",
+            "columnName": "lido",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_alertas_femeaId",
+            "unique": false,
+            "columnNames": [
+              "femeaId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_alertas_femeaId` ON `${TABLE_NAME}` (`femeaId`)"
+          },
+          {
+            "name": "index_alertas_lido",
+            "unique": false,
+            "columnNames": [
+              "lido"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_alertas_lido` ON `${TABLE_NAME}` (`lido`)"
+          },
+          {
+            "name": "index_alertas_dataGeracao",
+            "unique": false,
+            "columnNames": [
+              "dataGeracao"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_alertas_dataGeracao` ON `${TABLE_NAME}` (`dataGeracao`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "femeas",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "femeaId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e4704a9343c2e681bacfa822a4fd845c')"
+    ]
+  }
+}
