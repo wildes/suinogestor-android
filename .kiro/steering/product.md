@@ -1,6 +1,6 @@
 # Product
 
-**SuínoGestão 360** is a swine farm management application targeting Brazilian pig producers. It transforms zootechnical and biological data into strategic business decisions, helping producers transition from informal management to professional, data-driven operations.
+**SuinoGestor** is a swine farm management application targeting Brazilian pig producers. It transforms zootechnical and biological data into strategic business decisions, helping producers transition from informal management to professional, data-driven operations.
 
 ## Core Domain
 
