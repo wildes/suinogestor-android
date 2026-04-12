@@ -1,0 +1,22 @@
+# Build
+build/
+.gradle/
+app/build/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Kotlin
+*.class
+
+# Kiro internals
+.kiro/skills/
