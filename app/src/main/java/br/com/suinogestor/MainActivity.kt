@@ -4,44 +4,46 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import br.com.suinogestor.presentation.femea.screen.CadastroFemeaScreen
+import br.com.suinogestor.presentation.femea.screen.ListaFemeasScreen
+import br.com.suinogestor.presentation.femea.screen.Rotas
 import br.com.suinogestor.ui.theme.SuinoGestorTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             SuinoGestorTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                val navController = rememberNavController()
+                NavHost(
+                    navController = navController,
+                    startDestination = Rotas.LISTA_FEMEAS
+                ) {
+                    composable(Rotas.LISTA_FEMEAS) {
+                        ListaFemeasScreen(
+                            onNovoCadastro = { navController.navigate(Rotas.CADASTRO_FEMEA) },
+                            onFemeaSelecionada = { id ->
+                                navController.navigate(Rotas.detalheFemea(id))
+                            }
+                        )
+                    }
+                    composable(Rotas.CADASTRO_FEMEA) {
+                        CadastroFemeaScreen(
+                            onCadastroSalvo = { navController.popBackStack() },
+                            onVoltar = { navController.popBackStack() }
+                        )
+                    }
+                    composable(Rotas.DETALHE_FEMEA) {
+                        // Detalhe será implementado em spec futura
+                    }
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    SuinoGestorTheme {
-        Greeting("Android")
     }
 }
