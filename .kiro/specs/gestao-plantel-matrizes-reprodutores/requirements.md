@@ -2,7 +2,7 @@
 
 ## Introdução
 
-O módulo **Gestão do Plantel de Matrizes e Reprodutores** é o núcleo do SuínoGestão 360. Ele centraliza o rastreamento individualizado de cada fêmea (matriz ou marrã) e de cada macho reprodutor (varrão/cachaço) ao longo de todo o ciclo de vida produtivo, desde a entrada na granja até o descarte.
+O módulo **Gestão do Plantel de Matrizes e Reprodutores** é o núcleo do SuinoGestor. Ele centraliza o rastreamento individualizado de cada fêmea (matriz ou marrã) e de cada macho reprodutor (varrão/cachaço) ao longo de todo o ciclo de vida produtivo, desde a entrada na granja até o descarte.
 
 O módulo transforma a escrituração zootécnica manual — hoje feita em fichas de papel — em registros digitais estruturados, calculando automaticamente datas críticas, alertas de manejo e indicadores de desempenho reprodutivo. O objetivo central é maximizar o número de leitões desmamados por fêmea ao ano (meta de excelência: ≥ 30 leitões/fêmea/ano) por meio de decisões baseadas em dados precisos e atualizados.
 
@@ -30,7 +30,7 @@ O módulo transforma a escrituração zootécnica manual — hoje feita em ficha
 - **Plantel**: Conjunto total de animais reprodutivos da granja (matrizes + marrãs + varrões).
 - **Taxa de Fertilidade**: Percentual de coberturas que resultam em parto confirmado; meta ≥ 85%.
 - **Taxa de Reposição**: Percentual do plantel de fêmeas renovado anualmente; meta entre 35% e 45%.
-- **Sistema**: O aplicativo SuínoGestão 360.
+- **Sistema**: O aplicativo SuinoGestor.
 - **Produtor**: Usuário do sistema; responsável pela gestão da granja.
 - **Ficha_da_Matriz**: Registro digital individual de uma fêmea, contendo todo o histórico reprodutivo.
 - **Ficha_do_Reprodutor**: Registro digital individual de um varrão, contendo histórico de uso e avaliações.
@@ -50,8 +50,8 @@ O módulo transforma a escrituração zootécnica manual — hoje feita em ficha
 #### Critérios de Aceitação
 
 1. THE Sistema SHALL exigir os seguintes campos obrigatórios no cadastro de uma fêmea: número de identificação (brinco ou tatuagem), data de nascimento, raça/linhagem genética e categoria inicial (marrã ou matriz).
-2. THE Sistema SHALL aceitar campos opcionais no cadastro: peso de entrada, espessura de toucinho de entrada (mm), origem (granja própria ou fornecedor externo) e número de identificação do pai e da mãe.
-3. WHEN o Produtor informar a data de nascimento de uma marrã, THE Calculadora_Reprodutiva SHALL calcular e exibir automaticamente a idade em dias.
+2. THE Sistema SHALL aceitar campos opcionais no cadastro: peso de entrada, ECC atual (escala 1–5), origem (granja própria ou fornecedor externo).
+3. WHEN o Produtor informar a data de nascimento de uma marrã, THE Calculadora_Reprodutiva SHALL calcular e exibir automaticamente a idade no formato ex: 1a3m15d para 1 ano 3 meses e 15 dias.
 4. IF o Produtor tentar cadastrar uma fêmea com número de identificação já existente no plantel, THEN THE Sistema SHALL rejeitar o cadastro e exibir a mensagem "Identificação já cadastrada no plantel".
 5. THE Sistema SHALL permitir o registro de foto do animal vinculada à Ficha_da_Matriz.
 6. WHEN uma fêmea for cadastrada como marrã com idade inferior a 160 dias, THE Motor_de_Alertas SHALL exibir o aviso "Fêmea abaixo da idade mínima de preparação reprodutiva (160 dias)".
@@ -65,7 +65,7 @@ O módulo transforma a escrituração zootécnica manual — hoje feita em ficha
 #### Critérios de Aceitação
 
 1. THE Sistema SHALL exigir os seguintes campos obrigatórios no cadastro de um reprodutor: número de identificação, data de nascimento, raça/linhagem genética e tipo de uso (monta natural, coleta para IA ou ambos).
-2. THE Sistema SHALL registrar para cada reprodutor: peso atual, ECC atual (escala 1–5) e data da última avaliação.
+2. THE Sistema SHALL registrar para cada reprodutor: peso atual, ECC atual (escala 1–5).
 3. WHEN o Produtor registrar o peso de um reprodutor, THE Sistema SHALL calcular e exibir a quantidade de ração diária recomendada como 1% do peso vivo em kg.
 4. WHEN um reprodutor ficar mais de 15 dias sem nenhuma cobertura registrada, THE Motor_de_Alertas SHALL gerar o alerta "Reprodutor [identificação] há [N] dias sem uso — risco de queda na motilidade espermática".
 5. WHEN a soma de coberturas registradas de um reprodutor adulto (acima de 300 dias) ultrapassar 6 montas na mesma semana, THE Motor_de_Alertas SHALL gerar o alerta "Limite semanal de uso atingido para o reprodutor [identificação] — risco de superutilização".
@@ -99,14 +99,13 @@ O módulo transforma a escrituração zootécnica manual — hoje feita em ficha
 
 #### Critérios de Aceitação
 
-1. THE Sistema SHALL rastrear para cada marrã: idade em dias, peso atual, ECC atual, espessura de toucinho (mm) e número de cios detectados.
+1. THE Sistema SHALL rastrear para cada marrã: idade em dias, peso atual, ECC atual e número de cios detectados.
 2. WHEN uma marrã atingir 145 dias de idade, THE Motor_de_Alertas SHALL gerar o alerta "Iniciar exposição ao rufião — estimulação da puberdade recomendada a partir de 145–155 dias".
 3. WHEN uma marrã atingir simultaneamente idade ≥ 210 dias, peso ≥ 140 kg e ao menos o 2º cio detectado, THE Motor_de_Alertas SHALL gerar o alerta "Marrã apta para primeira cobertura".
 4. IF o Produtor registrar uma cobertura em uma marrã com idade inferior a 210 dias, THEN THE Motor_de_Alertas SHALL exibir o aviso "Cobertura precoce — risco de redução de até 2,3 leitões no 2º parto e alta taxa de retorno ao cio".
 5. IF o Produtor registrar uma cobertura em uma marrã com peso inferior a 140 kg, THEN THE Motor_de_Alertas SHALL exibir o aviso "Peso abaixo do mínimo recomendado (140 kg) para primeira cobertura".
-6. IF o Produtor registrar uma cobertura em uma marrã com espessura de toucinho fora do intervalo de 12 a 18 mm, THEN THE Motor_de_Alertas SHALL exibir o aviso "Espessura de toucinho fora do intervalo ideal (12–18 mm) para cobertura".
-7. WHEN o Produtor registrar o início do flushing de uma marrã, THE Calculadora_Reprodutiva SHALL calcular e exibir a data prevista de cobertura como 10 a 14 dias após o início do flushing.
-8. WHERE o Produtor optar por registrar o número de cios da marrã, THE Sistema SHALL recomendar que a cobertura ocorra preferencialmente no 2º ou 3º cio detectado.
+6. WHEN o Produtor registrar o início do flushing de uma marrã, THE Calculadora_Reprodutiva SHALL calcular e exibir a data prevista de cobertura como 10 a 14 dias após o início do flushing.
+7. WHERE o Produtor optar por registrar o número de cios da marrã, THE Sistema SHALL recomendar que a cobertura ocorra preferencialmente no 2º ou 3º cio detectado.
 
 
 ---
