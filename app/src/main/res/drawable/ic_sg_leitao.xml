@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Body: smaller and rounder -->
+    <path android:pathData="M6,14 C6,11.8 8,10 11,10 C14,10 16,11.8 16,14 C16,16.2 14,17.5 11,17.5 C8,17.5 6,16.2 6,14 Z" />
+
+    <!-- Head: proportionally larger relative to body -->
+    <path android:pathData="M14,12 C14,9.8 15.8,8 18,8 C20.2,8 22,9.8 22,12 C22,14.2 20.2,16 18,16 C15.8,16 14,14.2 14,12 Z" />
+
+    <!-- Small erect ear (left) -->
+    <path android:pathData="M16.5,8 L16,6 L18,6 L17.5,8 Z" />
+
+    <!-- Round snout -->
+    <path android:pathData="M20,11 C20,10.17 20.67,9.5 21.5,9.5 C22.33,9.5 23,10.17 23,11 C23,11.83 22.33,12.5 21.5,12.5 C20.67,12.5 20,11.83 20,11 Z" />
+
+    <!-- Small legs: 4 short rectangles -->
+    <path android:pathData="M7.5,17.5 L7,20 L8.5,20 L8.5,17.5 Z" />
+    <path android:pathData="M10,17.5 L9.5,20 L11,20 L11,17.5 Z" />
+    <path android:pathData="M12,17.5 L11.5,20 L13,20 L13,17.5 Z" />
+    <path android:pathData="M14,17 L13.5,19.5 L15,19.5 L15,17 Z" />
+
+    <!-- Spiral/curly tail (stroke only, no fill) -->
+    <path
+        android:pathData="M6,13.5 C4.5,13 4,14 4.5,15 C5,16 6.5,15.5 6,14.5 C5.5,13.5 4.5,14 5,14.8"
+        android:fillColor="#00000000"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+</vector>

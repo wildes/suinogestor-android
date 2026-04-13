@@ -1,5 +1,6 @@
 [versions]
 agp = "9.1.0"
+splashscreen = "1.0.1"
 coreKtx = "1.18.0"
 coroutinesTest = "1.9.0"
 desugarJdkLibs = "2.1.5"
@@ -15,6 +16,7 @@ ksp = "2.2.10-2.0.2"
 hilt = "2.59.2"
 hiltNavigationCompose = "1.2.0"
 navigationCompose = "2.8.9"
+kotest = "5.8.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -44,6 +46,10 @@ androidx-navigation-compose = { group = "androidx.navigation", name = "navigatio
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
 android-desugar-jdk-libs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugarJdkLibs" }
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashscreen" }
+kotest-runner-junit5 = { group = "io.kotest", name = "kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions-core = { group = "io.kotest", name = "kotest-assertions-core", version.ref = "kotest" }
+kotest-property = { group = "io.kotest", name = "kotest-property", version.ref = "kotest" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

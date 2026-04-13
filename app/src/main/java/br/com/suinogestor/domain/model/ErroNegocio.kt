@@ -4,4 +4,5 @@ sealed class ErroNegocio {
     data class CampoObrigatorio(val campo: String) : ErroNegocio()
     data class IdentificacaoDuplicada(val mensagem: String) : ErroNegocio()
     object EccForaDoIntervalo : ErroNegocio()
+    data class ErroInterno(val mensagem: String) : ErroNegocio()
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Body: more rectangular/robust shape, facing right -->
+    <path android:pathData="M3.5,12.5 C3.5,10 6,8 10,8 C14,8 16.5,10 16.5,12.5 C16.5,15 14,16.5 10,16.5 C6,16.5 3.5,15 3.5,12.5 Z" />
+
+    <!-- Head: slightly larger, more angular -->
+    <path android:pathData="M15,10.5 C15,8.84 16.34,7.5 18,7.5 C19.66,7.5 21,8.84 21,10.5 C21,12.16 19.66,13.5 18,13.5 C16.34,13.5 15,12.16 15,10.5 Z" />
+
+    <!-- Erect ear (pointing up) -->
+    <path android:pathData="M17,7.5 L16.5,5 L18.5,5 L18,7.5 Z" />
+
+    <!-- Square snout -->
+    <path android:pathData="M20.5,9.5 L20.5,11.5 L23,11.5 L23,9.5 Z" />
+
+    <!-- Legs: 4 sturdy rectangles -->
+    <path android:pathData="M5.5,16.5 L5,20 L6.5,20 L6.5,16.5 Z" />
+    <path android:pathData="M8.5,16.5 L8,20 L9.5,20 L9.5,16.5 Z" />
+    <path android:pathData="M11,16.5 L10.5,20 L12,20 L12,16.5 Z" />
+    <path android:pathData="M13.5,16 L13,19.5 L14.5,19.5 L14.5,16 Z" />
+
+    <!-- Curly tail (stroke only, no fill) -->
+    <path
+        android:pathData="M3.5,12 C2,11.5 1.5,12.5 2,13.5 C2.5,14.5 3.5,14 3,13"
+        android:fillColor="#00000000"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+</vector>

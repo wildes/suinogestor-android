@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Body: rounded ellipse, facing right -->
+    <path android:pathData="M4,13 C4,10.5 6.5,8.5 10,8.5 C13.5,8.5 16,10.5 16,13 C16,15.5 13.5,17 10,17 C6.5,17 4,15.5 4,13 Z" />
+
+    <!-- Head: circle -->
+    <path android:pathData="M15,11 C15,9.34 16.34,8 18,8 C19.66,8 21,9.34 21,11 C21,12.66 19.66,14 18,14 C16.34,14 15,12.66 15,11 Z" />
+
+    <!-- Floppy ear (drooping forward) -->
+    <path android:pathData="M16,8.5 C16,8.5 15,6.5 17,6 C19,5.5 19.5,7.5 18,8.5 Z" />
+
+    <!-- Snout (rounded rectangle) -->
+    <path android:pathData="M20,10.5 C20,9.67 20.67,9 21.5,9 C22.33,9 23,9.67 23,10.5 C23,11.33 22.33,12 21.5,12 C20.67,12 20,11.33 20,10.5 Z" />
+
+    <!-- Teat line: 3 small circles along belly -->
+    <path android:pathData="M7,16.5 C7,16.22 7.22,16 7.5,16 C7.78,16 8,16.22 8,16.5 C8,16.78 7.78,17 7.5,17 C7.22,17 7,16.78 7,16.5 Z" />
+    <path android:pathData="M9.5,17 C9.5,16.72 9.72,16.5 10,16.5 C10.28,16.5 10.5,16.72 10.5,17 C10.5,17.28 10.28,17.5 10,17.5 C9.72,17.5 9.5,17.28 9.5,17 Z" />
+    <path android:pathData="M12,16.5 C12,16.22 12.22,16 12.5,16 C12.78,16 13,16.22 13,16.5 C13,16.78 12.78,17 12.5,17 C12.22,17 12,16.78 12,16.5 Z" />
+
+    <!-- Legs: 4 small rectangles -->
+    <path android:pathData="M6,17 L5.5,20 L7,20 L7,17 Z" />
+    <path android:pathData="M9,17 L8.5,20 L10,20 L10,17 Z" />
+    <path android:pathData="M11.5,17 L11,20 L12.5,20 L12.5,17 Z" />
+    <path android:pathData="M14,16.5 L13.5,19.5 L15,19.5 L15,16.5 Z" />
+
+    <!-- Curly tail (stroke only, no fill) -->
+    <path
+        android:pathData="M4,12.5 C2.5,12 2,13 2.5,14 C3,15 4,14.5 3.5,13.5"
+        android:fillColor="#00000000"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+</vector>

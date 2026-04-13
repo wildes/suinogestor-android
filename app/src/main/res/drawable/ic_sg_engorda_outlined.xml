@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ic_sg_engorda_outlined.xml — Engorda (módulo, estado inativo)
+    Silhueta de suíno com seta diagonal ascendente (outlined).
+    Viewport: 24×24 | Sem cores hardcoded.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Corpo do suíno — stroke only -->
+    <path
+        android:pathData="M4,14 C4,11.8 5.8,10 8,10 L14,10 C16.2,10 18,11.8 18,14 C18,16.2 16.2,18 14,18 L8,18 C5.8,18 4,16.2 4,14 Z"
+        android:fillColor="#00000000"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Cabeça do suíno — stroke only -->
+    <path
+        android:pathData="M15,11.5 C15,9.8 16.3,8.5 18,8.5 C19.7,8.5 21,9.8 21,11.5 C21,13.2 19.7,14.5 18,14.5 C16.3,14.5 15,13.2 15,11.5 Z"
+        android:fillColor="#00000000"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Seta diagonal ascendente — stroke only -->
+    <path
+        android:pathData="M3,20 L10,7"
+        android:fillColor="#00000000"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+    <!-- Ponta da seta -->
+    <path
+        android:pathData="M10,7 L7,6 M10,7 L11,10"
+        android:fillColor="#00000000"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+</vector>

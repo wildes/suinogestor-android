@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.Search
@@ -48,13 +49,24 @@ import br.com.suinogestor.ui.component.StatusFemeaChip
 fun ListaFemeasScreen(
     onNovoCadastro: () -> Unit,
     onFemeaSelecionada: (Long) -> Unit,
+    onVoltar: () -> Unit = {},
     viewModel: FemeaViewModel = hiltViewModel()
 ) {
     val state by viewModel.listaState.collectAsStateWithLifecycle()
 
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("Plantel de Fêmeas") })
+            TopAppBar(
+                title = { Text("Plantel de Fêmeas") },
+                navigationIcon = {
+                    IconButton(onClick = onVoltar) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            contentDescription = "Voltar"
+                        )
+                    }
+                }
+            )
         },
         floatingActionButton = {
             ExtendedFloatingActionButton(

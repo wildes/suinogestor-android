@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ic_sg_gestacao.xml — Gestação (pregnancy)
+    Sow silhouette facing right with a visibly rounded/protruding abdomen indicating pregnancy.
+    Similar to ic_sg_matriz but with a more pronounced belly bulge. No teat line.
+    Viewport: 24×24 | No hardcoded fillColor/strokeColor hex values on solid paths.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Body: pronounced rounded belly (pregnancy bulge) -->
+    <path android:pathData="M3.5,13 C3.5,9.5 6,7.5 10,7.5 C14,7.5 16.5,9.5 16.5,13 C16.5,16.5 14,18.5 10,18.5 C6,18.5 3.5,16.5 3.5,13 Z" />
+
+    <!-- Head -->
+    <path android:pathData="M15,11 C15,9.34 16.34,8 18,8 C19.66,8 21,9.34 21,11 C21,12.66 19.66,14 18,14 C16.34,14 15,12.66 15,11 Z" />
+
+    <!-- Floppy ear -->
+    <path android:pathData="M16,8.5 C16,8.5 15,6.5 17,6 C19,5.5 19.5,7.5 18,8.5 Z" />
+
+    <!-- Snout -->
+    <path android:pathData="M20,10.5 C20,9.67 20.67,9 21.5,9 C22.33,9 23,9.67 23,10.5 C23,11.33 22.33,12 21.5,12 C20.67,12 20,11.33 20,10.5 Z" />
+
+    <!-- Legs: 4 small rectangles -->
+    <path android:pathData="M5.5,18.5 L5,21 L6.5,21 L6.5,18.5 Z" />
+    <path android:pathData="M8.5,18.5 L8,21 L9.5,21 L9.5,18.5 Z" />
+    <path android:pathData="M11,18.5 L10.5,21 L12,21 L12,18.5 Z" />
+    <path android:pathData="M13.5,18 L13,21 L14.5,21 L14.5,18 Z" />
+
+    <!-- Curly tail (stroke only) -->
+    <path
+        android:pathData="M3.5,12.5 C2,12 1.5,13 2,14 C2.5,15 3.5,14.5 3,13.5"
+        android:fillColor="#00000000"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round" />
+
+</vector>
