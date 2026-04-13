@@ -175,6 +175,112 @@ Toda tela de lista deve tratar os seguintes estados:
 
 ---
 
+## Ícones Customizados
+
+O SuinoGestor possui um sistema de ícones próprio (`Icon_System`) para entidades e módulos específicos da suinocultura, complementando os Material Symbols Rounded.
+
+### Convenção de Nomenclatura
+
+Todos os VectorDrawable customizados seguem o padrão:
+
+```
+ic_sg_<nome>.xml
+```
+
+onde `<nome>` é composto apenas por letras minúsculas e underscores (ex.: `ic_sg_matriz.xml`, `ic_sg_cobertura.xml`).
+
+Localização: `app/src/main/res/drawable/`
+
+### Catálogo de Ícones
+
+#### Animais
+
+| Drawable | Descrição |
+|---|---|
+| `ic_sg_matriz.xml` | Suína adulta de perfil, com linha de tetas |
+| `ic_sg_reprodutor.xml` | Suíno adulto de perfil, corpo robusto, orelhas eretas |
+| `ic_sg_leitao.xml` | Filhote suíno, corpo arredondado, cabeça proporcionalmente maior |
+
+#### Fases Reprodutivas
+
+| Drawable | Descrição |
+|---|---|
+| `ic_sg_cobertura.xml` | Dois suínos frente a frente com coração entre eles |
+| `ic_sg_gestacao.xml` | Matriz com abdômen arredondado indicando prenhez |
+| `ic_sg_parto.xml` | Matriz deitada com leitão emergindo |
+| `ic_sg_lactacao.xml` | Matriz deitada com leitões ao longo da barriga |
+| `ic_sg_desmame.xml` | Matriz e leitão com seta de separação entre eles |
+
+#### Módulos de Navegação
+
+| Drawable | Variante | Uso |
+|---|---|---|
+| `ic_sg_reproducao_outlined.xml` | Outlined | Módulo Reprodução — inativo |
+| `ic_sg_reproducao_filled.xml` | Filled | Módulo Reprodução — ativo |
+| `ic_sg_engorda_outlined.xml` | Outlined | Módulo Engorda — inativo |
+| `ic_sg_engorda_filled.xml` | Filled | Módulo Engorda — ativo |
+| `ic_sg_financeiro_outlined.xml` | Outlined | Módulo Financeiro — inativo |
+| `ic_sg_financeiro_filled.xml` | Filled | Módulo Financeiro — ativo |
+| `ic_sg_indicadores_outlined.xml` | Outlined | Módulo Indicadores — inativo |
+| `ic_sg_indicadores_filled.xml` | Filled | Módulo Indicadores — ativo |
+
+### Regras de Uso de `tint`
+
+- **Nunca** definir `fillColor` ou `strokeColor` com valores hexadecimais literais nos XMLs `ic_sg_*`
+- A cor é **sempre** aplicada via `tint` pelo Compose:
+
+```kotlin
+// Ícone interativo (com contentDescription)
+Icon(
+    painter = painterResource(SuinoGestorIcons.Animais.Matriz),
+    contentDescription = "Matriz",
+    tint = MaterialTheme.colorScheme.onSurfaceVariant
+)
+
+// Módulo ativo na barra de navegação
+Icon(
+    painter = painterResource(SuinoGestorIcons.Modulos.Reproducao.Filled),
+    contentDescription = "Reprodução",
+    tint = MaterialTheme.colorScheme.onSecondaryContainer
+)
+
+// Ícone decorativo (acompanhado de rótulo de texto)
+Icon(
+    painter = painterResource(SuinoGestorIcons.FasesReprodutivas.Gestacao),
+    contentDescription = null, // decorativo — rótulo de texto já descreve
+    tint = MaterialTheme.colorScheme.primary
+)
+```
+
+### Referência Tipada — `SuinoGestorIcons.kt`
+
+Use sempre o objeto `SuinoGestorIcons` para referenciar ícones em Compose, evitando IDs de drawable espalhados pelo código:
+
+```kotlin
+// Estrutura do objeto
+SuinoGestorIcons.Animais.Matriz          // @DrawableRes Int
+SuinoGestorIcons.Animais.Reprodutor
+SuinoGestorIcons.Animais.Leitao
+SuinoGestorIcons.FasesReprodutivas.Cobertura
+SuinoGestorIcons.FasesReprodutivas.Gestacao
+SuinoGestorIcons.FasesReprodutivas.Parto
+SuinoGestorIcons.FasesReprodutivas.Lactacao
+SuinoGestorIcons.FasesReprodutivas.Desmame
+SuinoGestorIcons.Modulos.Reproducao.Outlined
+SuinoGestorIcons.Modulos.Reproducao.Filled
+// ... (idem para Engorda, Financeiro, Indicadores)
+```
+
+Localização: `app/src/main/java/br/com/suinogestor/ui/theme/SuinoGestorIcons.kt`
+
+### Acessibilidade
+
+- Ícones **interativos**: fornecer `contentDescription` não nulo em português descrevendo a ação ou entidade
+- Ícones **decorativos** (acompanhados de rótulo de texto): definir `contentDescription = null`
+- Contraste mínimo 4,5:1 entre `tint` e fundo do componente em ambos os temas
+
+---
+
 ## Acessibilidade
 
 - Contraste mínimo 4,5:1 (WCAG 2.1 AA) em todos os pares texto/fundo

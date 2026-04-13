@@ -115,6 +115,8 @@ class FemeaViewModel @Inject constructor(
                             _cadastroState.value.copy(salvando = false, erroGeral = "Campo obrigatório: ${erro.campo}")
                         ErroNegocio.EccForaDoIntervalo ->
                             _cadastroState.value.copy(salvando = false, erroEcc = "ECC deve estar entre 1 e 5")
+                        is ErroNegocio.ErroInterno ->
+                            _cadastroState.value.copy(salvando = false, erroGeral = erro.mensagem)
                     }
                     _cadastroState.value = state
                 }

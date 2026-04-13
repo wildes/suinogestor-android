@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.SuinoGestor" parent="android:Theme.Material.Light.NoActionBar" />
-
     <style name="Theme.SuinoGestor.Starting" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">#5D7A3E</item>
+        <item name="windowSplashScreenBackground">#2D3E1E</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_sg_splash_animated</item>
         <item name="windowSplashScreenAnimationDuration">800</item>
         <item name="postSplashScreenTheme">@style/Theme.SuinoGestor</item>

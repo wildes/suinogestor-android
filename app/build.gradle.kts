@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.core.splashscreen)
     testImplementation(libs.junit)
     coreLibraryDesugaring(libs.android.desugar.jdk.libs)
     testImplementation(libs.kotlinx.coroutines.test)

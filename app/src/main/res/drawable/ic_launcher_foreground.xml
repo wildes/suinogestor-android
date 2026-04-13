@@ -1,30 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adaptive Icon Foreground — SuinoGestor
+    Viewport: 108dp × 108dp
+    Safe zone: coordenadas 21–87 (círculo central 66dp)
+    Símbolo: silhueta de suíno estilizado, virado para a direita
+    Cor: fillColor="#FFFFFF" para compatibilidade com ícone monocromático (API 33+)
+    Sem gradientes, sem outras cores.
+-->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+
+    <!--
+        Corpo principal — dorso levemente arqueado, barriga proeminente
+        Vai de x≈28 (traseiro) até x≈76 (pescoço), altura central ~58
+    -->
     <path
         android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:pathData="
+            M30,56
+            C29,48 33,42 40,40
+            C47,38 56,39 62,41
+            C68,43 74,47 76,53
+            C78,58 76,65 72,68
+            C68,71 60,73 50,73
+            C40,73 32,70 30,64
+            C29,61 30,58 30,56 Z" />
+
+    <!--
+        Cabeça — maior, mais quadrada/arredondada, característica de suíno
+        Centro ~(83, 52), conecta ao corpo pelo pescoço
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M74,50
+            C74,44 77,40 82,39
+            C87,38 91,41 92,46
+            C93,51 91,57 87,59
+            C84,61 79,60 76,57
+            C74,55 74,52 74,50 Z" />
+
+    <!--
+        Orelha floppy — grande, caída para frente, forma triangular arredondada
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M77,43
+            C78,37 83,34 86,36
+            C89,38 88,43 85,46
+            C83,48 79,48 78,46
+            C77,45 77,44 77,43 Z" />
+
+    <!--
+        Focinho — disco circular bem definido, levemente projetado
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M89,50
+            C89,46 91,43 93,43
+            C95,43 96,46 96,50
+            C96,54 95,57 93,57
+            C91,57 89,54 89,50 Z" />
+
+    <!--
+        Narina superior — oval pequena
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M90.5,48
+            C90.5,46.8 91.3,46 92.2,46
+            C93.1,46 93.8,46.8 93.8,48
+            C93.8,49.2 93.1,50 92.2,50
+            C91.3,50 90.5,49.2 90.5,48 Z"
+        android:fillAlpha="0.35" />
+
+    <!--
+        Narina inferior — oval pequena
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M90.5,52.5
+            C90.5,51.3 91.3,50.5 92.2,50.5
+            C93.1,50.5 93.8,51.3 93.8,52.5
+            C93.8,53.7 93.1,54.5 92.2,54.5
+            C91.3,54.5 90.5,53.7 90.5,52.5 Z"
+        android:fillAlpha="0.35" />
+
+    <!--
+        Olho — pequeno círculo expressivo
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M82,44
+            C82,42.9 82.7,42 83.6,42
+            C84.5,42 85.2,42.9 85.2,44
+            C85.2,45.1 84.5,46 83.6,46
+            C82.7,46 82,45.1 82,44 Z"
+        android:fillAlpha="0.4" />
+
+    <!--
+        Perna dianteira esquerda — com casco (base mais larga)
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M42,71
+            L40,71 L39,83 L40,85 L44,85 L45,83 L44,71 Z" />
+
+    <!--
+        Perna dianteira direita
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M52,72
+            L50,72 L49,84 L50,86 L54,86 L55,84 L54,72 Z" />
+
+    <!--
+        Perna traseira esquerda
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M60,72
+            L58,72 L57,83 L58,85 L62,85 L63,83 L62,72 Z" />
+
+    <!--
+        Perna traseira direita
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+            M69,71
+            L67,71 L66,82 L67,84 L71,84 L72,82 L71,71 Z" />
+
+    <!--
+        Rabo em espiral dupla — mais pronunciado e expressivo
+    -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="
+            M30,55
+            C25,51 21,53 21,58
+            C21,63 25,66 29,64
+            C33,62 33,58 30,56
+            C28,55 26,57 27,59" />
+
 </vector>
